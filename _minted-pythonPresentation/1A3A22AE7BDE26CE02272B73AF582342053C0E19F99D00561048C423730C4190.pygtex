@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+     \PYG{o}{.}\PYG{n}{split}\PYG{p}{()}
+     \PYG{o}{.}\PYG{n}{replace}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{},\PYGZdq{}} \PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}.\PYGZdq{}}\PYG{p}{)}
+     \PYG{o}{.}\PYG{n}{find}\PYG{p}{()}
+     \PYG{o}{.}\PYG{n}{count}\PYG{p}{()}
+     \PYG{o}{.}\PYG{n}{isalnum}\PYG{p}{()}
+     \PYG{o}{.}\PYG{n}{isalpha}\PYG{p}{()}
+     \PYG{o}{.}\PYG{n}{isdigit}\PYG{p}{()}
+     \PYG{o}{.}\PYG{n}{strip}\PYG{p}{()}
+\end{Verbatim}

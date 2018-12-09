@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{matrix} \PYG{o}{=} \PYG{p}{[[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{],} \PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{],} \PYG{p}{[}\PYG{l+m+mi}{7}\PYG{p}{,}\PYG{l+m+mi}{8}\PYG{p}{,}\PYG{l+m+mi}{9}\PYG{p}{]]}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{matrix}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{][}\PYG{l+m+mi}{0}\PYG{p}{])}       \PYG{c+c1}{\PYGZsh{} this prints 6 !}
+
+\PYG{n}{matrix}\PYG{o}{.}\PYG{n}{append}\PYG{p}{([}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{l+m+mi}{11}\PYG{p}{,}\PYG{l+m+mi}{12}\PYG{p}{])} \PYG{c+c1}{\PYGZsh{} now matrix is 4*3}
+
+\PYG{n}{matrix}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,[}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} inserts new row at index 2}
+
+\PYG{n}{a} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{]}
+\PYG{n}{matrix} \PYG{o}{=} \PYG{n}{matrix} \PYG{o}{+} \PYG{n}{a}         \PYG{c+c1}{\PYGZsh{} combining to lists.}
+\end{Verbatim}

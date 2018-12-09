@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{point} \PYG{o}{=} \PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}
+\PYG{n}{student} \PYG{o}{=} \PYG{p}{(}\PYG{n}{name}\PYG{p}{,} \PYG{n}{roll}\PYG{p}{,} \PYG{n}{enrollYr}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} they can be sliced just like lists}
+\PYG{n}{student}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}  \PYG{c+c1}{\PYGZsh{} gives name of student}
+\PYG{n}{point}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}    \PYG{c+c1}{\PYGZsh{} gives y co\PYGZhy{}ordinate of point}
+\end{Verbatim}

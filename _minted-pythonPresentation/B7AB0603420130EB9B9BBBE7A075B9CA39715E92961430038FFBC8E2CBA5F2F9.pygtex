@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYGZdl{} sudo apt\PYGZhy{}get update
+    \PYGZdl{} sudo apt\PYGZhy{}get upgrade
+    \PYGZdl{} sudo apt\PYGZhy{}get install spyder python3\PYGZhy{}matplotlib
+    \PYGZdl{} sudo apt\PYGZhy{}get install  python3\PYGZhy{}scipy python3\PYGZhy{}pandas
+\end{Verbatim}

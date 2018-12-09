@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n+nb}{dict}\PYG{p}{)}
+        \PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n+nb}{dict}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{()}
+        \PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n+nb}{dict}\PYG{o}{.}\PYG{n}{values}\PYG{p}{()}
+\end{Verbatim}

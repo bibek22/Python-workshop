@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+     \PYG{n}{age} \PYG{o}{=} \PYG{l+m+mi}{5}               \PYG{c+c1}{\PYGZsh{} integer}
+     \PYG{n}{height} \PYG{o}{=} \PYG{l+m+mf}{123.2}        \PYG{c+c1}{\PYGZsh{} float}
+     \PYG{n}{college} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}SXC\PYGZdq{}}       \PYG{c+c1}{\PYGZsh{} string}
+     \PYG{n}{isAlumni} \PYG{o}{=} \PYG{k+kc}{True}       \PYG{c+c1}{\PYGZsh{} boolean}
+\end{Verbatim}

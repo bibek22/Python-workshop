@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{list} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{]}
+\PYG{n+nb}{len}\PYG{p}{(}\PYG{n+nb}{list}\PYG{p}{)}      \PYG{c+c1}{\PYGZsh{} length of the list (returns 3)}
+
+\PYG{n}{a} \PYG{o}{=} \PYG{l+m+mi}{3} \PYG{o+ow}{in} \PYG{n+nb}{list}  \PYG{c+c1}{\PYGZsh{} a is True now}
+\PYG{c+c1}{\PYGZsh{} item in list   evaluates to either true or false.}
+
+\PYG{o}{.}\PYG{n}{find}\PYG{p}{()}
+\PYG{o}{.}\PYG{n}{search}\PYG{p}{()}
+\PYG{o}{.}\PYG{n}{replace}\PYG{p}{()}
+\end{Verbatim}

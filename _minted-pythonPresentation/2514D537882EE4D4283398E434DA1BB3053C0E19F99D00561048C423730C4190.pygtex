@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+   \PYG{n}{name} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}John Doe\PYGZdq{}}
+   \PYG{n}{sentence} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}My name is \PYGZdq{}} \PYG{o}{+} \PYG{n}{name} \PYG{o}{+}\PYG{l+s+s2}{\PYGZdq{}.\PYGZdq{}}
+
+   \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{sentence}\PYG{p}{,} \PYG{n}{end}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}.\PYGZdq{}}\PYG{p}{)}
+
+   \PYG{n}{multiLine} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}\PYGZsq{} This is a}
+\PYG{l+s+s1}{   string with multiple}
+\PYG{l+s+s1}{   lines in it \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\end{Verbatim}
