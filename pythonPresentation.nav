@@ -19,40 +19,90 @@
 \headcommand {\beamer@sectionpages {7}{8}}
 \headcommand {\beamer@subsectionpages {7}{8}}
 \headcommand {\sectionentry {3}{Python Basics}{9}{Python Basics}{0}}
-\headcommand {\slideentry {3}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{intro}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{intro}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {3}{0}{2}{10/10}{}{0}}
+\headcommand {\slideentry {3}{1}{2}{10/10}{intro}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{3}{11/11}{}{0}}
+\headcommand {\beamer@subsectionpages {9}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{Data types}}
+\headcommand {\slideentry {3}{2}{1}{11/11}{Data types}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{4}{12/14}{}{0}}
+\headcommand {\slideentry {3}{2}{2}{12/14}{Data types}{0}}
 \headcommand {\beamer@framepages {12}{14}}
-\headcommand {\slideentry {3}{0}{5}{15/15}{}{0}}
+\headcommand {\slideentry {3}{2}{3}{15/15}{Data types}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{0}{6}{16/16}{}{0}}
-\headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{0}{7}{17/17}{}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{0}{8}{18/18}{}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{16}{inputs}}
+\headcommand {\slideentry {3}{2}{4}{16/17}{Data types}{0}}
+\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{2}{18}{inputs}}
+\headcommand {\slideentry {3}{2}{5}{18/18}{Data types}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{0}{9}{19/19}{}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{19}{lists}}
+\headcommand {\slideentry {3}{2}{6}{19/19}{Data types}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{0}{10}{20/20}{}{0}}
+\headcommand {\slideentry {3}{2}{7}{20/20}{Data types}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{0}{11}{21/21}{}{0}}
+\headcommand {\slideentry {3}{2}{8}{21/21}{Data types}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {3}{0}{12}{22/22}{}{0}}
+\headcommand {\slideentry {3}{2}{9}{22/22}{Data types}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {3}{0}{13}{23/24}{}{0}}
-\headcommand {\beamer@framepages {23}{24}}
-\headcommand {\slideentry {3}{0}{14}{25/27}{}{0}}
-\headcommand {\beamer@framepages {25}{27}}
-\headcommand {\slideentry {3}{0}{15}{28/28}{}{0}}
-\headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {3}{0}{16}{29/29}{}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@partpages {1}{29}}
-\headcommand {\beamer@subsectionpages {9}{29}}
-\headcommand {\beamer@sectionpages {9}{29}}
-\headcommand {\beamer@documentpages {29}}
-\headcommand {\gdef \inserttotalframenumber {21}}
+\headcommand {\slideentry {3}{2}{10}{23/23}{Data types}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{2}{11}{24/24}{Data types}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{4}{25}{Tuple}}
+\headcommand {\slideentry {3}{2}{12}{25/26}{Data types}{0}}
+\headcommand {\beamer@framepages {25}{26}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{5}{27}{Dictionary}}
+\headcommand {\slideentry {3}{2}{13}{27/29}{Data types}{0}}
+\headcommand {\beamer@framepages {27}{29}}
+\headcommand {\slideentry {3}{2}{14}{30/30}{Data types}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@subsectionpages {11}{30}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{31}{Conditionals}}
+\headcommand {\slideentry {3}{3}{1}{31/31}{Conditionals}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\beamer@subsectionpages {31}{31}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{32}{Loops}}
+\headcommand {\slideentry {3}{4}{1}{32/33}{Loops}{0}}
+\headcommand {\beamer@framepages {32}{33}}
+\headcommand {\slideentry {3}{4}{2}{34/37}{Loops}{0}}
+\headcommand {\beamer@framepages {34}{37}}
+\headcommand {\slideentry {3}{4}{3}{38/39}{Loops}{0}}
+\headcommand {\beamer@framepages {38}{39}}
+\headcommand {\slideentry {3}{4}{4}{40/40}{Loops}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {3}{4}{5}{41/43}{Loops}{0}}
+\headcommand {\beamer@framepages {41}{43}}
+\headcommand {\slideentry {3}{4}{6}{44/44}{Loops}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {3}{4}{7}{45/46}{Loops}{0}}
+\headcommand {\beamer@framepages {45}{46}}
+\headcommand {\slideentry {3}{4}{8}{47/48}{Loops}{0}}
+\headcommand {\beamer@framepages {47}{48}}
+\headcommand {\beamer@subsectionpages {32}{48}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{49}{Functions}}
+\headcommand {\slideentry {3}{5}{1}{49/55}{Functions}{0}}
+\headcommand {\beamer@framepages {49}{55}}
+\headcommand {\slideentry {3}{5}{2}{56/56}{Functions}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {3}{5}{3}{57/57}{Functions}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@sectionpages {9}{57}}
+\headcommand {\beamer@subsectionpages {49}{57}}
+\headcommand {\sectionentry {4}{Object Oriented Programming with Python}{58}{Object Oriented Programming with Python}{0}}
+\headcommand {\slideentry {4}{0}{1}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {4}{0}{2}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {4}{0}{3}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {4}{0}{4}{61/61}{}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\beamer@partpages {1}{61}}
+\headcommand {\beamer@subsectionpages {58}{61}}
+\headcommand {\beamer@sectionpages {58}{61}}
+\headcommand {\beamer@documentpages {61}}
+\headcommand {\gdef \inserttotalframenumber {37}}

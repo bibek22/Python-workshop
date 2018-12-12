@@ -6,6 +6,10 @@
    (add-to-list 'LaTeX-verbatim-environments-local "minted")
    (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
    (add-to-list 'LaTeX-verbatim-environments-local "semiverbatim")
+   (add-to-list 'LaTeX-verbatim-environments-local "pycode")
+   (add-to-list 'LaTeX-verbatim-environments-local "pycode*")
+   (add-to-list 'LaTeX-verbatim-environments-local "pythoncode")
+   (add-to-list 'LaTeX-verbatim-environments-local "pythoncode*")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
@@ -24,7 +28,11 @@
     "tikz")
    (LaTeX-add-labels
     "fig:py"
-    "fig:c")
+    "fig:c"
+    "fig:loop")
+   (LaTeX-add-environments
+    '("pythoncode*" LaTeX-env-args (TeX-arg-key-val LaTeX-minted-key-val-options-local))
+    '("pythoncode"))
    (LaTeX-add-xcolor-definecolors
     "secinhead"
     "foot"

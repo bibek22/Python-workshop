@@ -1,6 +1,9 @@
 \documentclass[12pt, aspectratio=169]{beamer}
  \usepackage{listings}
+
+
 \usepackage{minted}
+ \newminted{python}{bgcolor=gray!25,fontsize=\footnotesize,mathescape}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 
@@ -77,8 +80,10 @@
 
 
 \begin{document}
-\title{Workshop on Python Programming}  
+\title{Intro to Programming: With Python}  
+\subtitle{(a workshop)}  
 \author{Bibek Gautam}
+\institute{St. Xavier's College, Maitighar}
 \date{\today} 
 
 \begin{frame}[plain]
@@ -96,7 +101,6 @@
    \begin{figure}
 \hspace{-4em}\centering   \includegraphics[width=0.28\textwidth]{pythonlogo} 
    \end{figure}
- 
   }
 \only<2>{
   \begin{columns}
@@ -171,7 +175,6 @@
    \end{column}
    \end{columns}
  }
- 
 }
 
 \frame{ \frametitle{Compiled Vs. Interpreted}
@@ -207,6 +210,7 @@
 } 
 
 \section{Python Basics}
+\subsection{intro}
 \begin{frame}[fragile]
   \frametitle{Hello world and comments}
   \begin{columns}
@@ -251,6 +255,7 @@
 \emph{Order of Operation matters!}
 \end{frame}
 
+\subsection{Data types}
 \begin{frame} [fragile]
   \frametitle{Variables \& Data types}
 \begin{minted}{python3}
@@ -258,6 +263,9 @@
      height = 123.2        # float
      college = "SXC"       # string
      isAlumni = True       # boolean
+     favNum = 2 + 3j       # complex number
+
+     # and a few more
 
 \end{minted}
 \end{frame}
@@ -294,6 +302,7 @@
      .find()
      .count()
      .isalnum()
+     .int()
      .isalpha()
      .isdigit()
      .strip()
@@ -302,20 +311,33 @@
 \end{frame}
 
 
+\subsubsection{inputs}
 \begin{frame}[fragile]
   \frametitle{Taking inputs: }
-\textbf{}
+\textbf{As simple as it gets...} \\
+\vspace{1em}
 \begin{minted}{python3}
-age = input("Enter your age: ")
-print("Wow, you've been around for", age, "years!")
+    age = input("Enter your age: ")
+    print("You've lived for about", int(age)*365, "days!")
 \end{minted}
-
+\vspace{2em}\pause
 \textbf{What if i enter characters and not digits?}
+\vspace{2em}
 
+\end{frame}
+
+\subsubsection{inputs}
+\begin{frame}[fragile]
+  \frametitle{Practice}
+     \textbf{   Here is a problem for you to try: }\\ 
+    \vspace{1em}
+Get input from user and print it out by splitting it at space character.
 \end{frame}
 
 
 
+
+\subsubsection{lists}
 \begin{frame}[fragile]
   \frametitle{Lists}
   \begin{itemize}
@@ -403,7 +425,8 @@ a = 3 in list  # a is True now
 \textbf{string are almost like lists !}
 \end{frame}
 
-\begin{frame}[fragile,fragile]
+\subsubsection{Tuple}
+\begin{frame}[fragile]
   \frametitle{Tuples}
 \textbf{What are tuples?}
 \begin{itemize}
@@ -425,6 +448,7 @@ point[1]    # gives y co-ordinate of point
 \end{minted}
 \end{frame}
 
+\subsubsection{Dictionary}
 \begin{frame} [fragile]
   \frametitle{Dictionary}
   \begin{itemize}
@@ -455,6 +479,7 @@ point[1]    # gives y co-ordinate of point
 \vfill
 \end{frame}
 
+\subsection{Conditionals}
 \begin{frame} [fragile]
   \frametitle{Conditionals - if/else}
 \textbf{When your code requires decision making based on conditions}
@@ -470,108 +495,243 @@ point[1]    # gives y co-ordinate of point
  
 \end{minted}
 \vspace{1em}
-\textbf{Python also has keywords like: and, or, not}
+\textbf{Python also has keywords like: and, or, not, True, False}
 \vspace{1em}
 \end{frame}
 
 
+\subsection{Loops}
+\frame{\frametitle{Loops}
+  \only<1>{
+    \centering
+  \begin{itemize}
+  \item loops are for when you have to execute a block of code multiple times.
+  \item there are two modes of loops: \textbf{for} and \textbf{while} loop. 
+  \end{itemize}
+  }
+  \only<2>{
+  \begin{figure}
+    \centering
+   \includegraphics[scale=0.34]{loop} 
+    \caption{Basic Logic of Loop }
+    \label{fig:loop}
+  \end{figure}
+  }
+}
+\frame{\frametitle{For loop}
+  \begin{itemize}
+  \item For loop iterates through a collection of iterables object or\\
+    generator function \pause
+  \item for eg. a list is an iterable and so is a string \pause
+  \item dictionary is also an iterable \pause
+  \end{itemize}
+\vspace{2em}
+ \textbf{What are generator functions?} \\ 
+  \begin{itemize}
+    \item range() is an example
+    \item another is open()  which is used to open files. \textit{We'll come to this later.} 
+  \end{itemize}
+}
+
+\frame{\frametitle{For loop}
+\only<1->{
+ \textbf{Let's talk about range() } \\ 
+ \begin{figure}
+   \includegraphics[scale=0.50]{forloop} 
+   \caption{for loop with range}
+ \end{figure}
+}
+
+\only<2>{
+\textcolor{gray}{ range(s, e, stp) with start, end, and step} 
+  }
+}
+
+\begin{frame}[fragile]
+  \frametitle{Loops}
+ \textbf{Some more range: } 
+% wont give you use \only with minted and (arg, arg) sort of thing inside. fckn stupid
+\begin{minted}{python3}
+  for i in range(1,11): 
+      print i
+  for i in range(1,21,2): 
+      print i
+  for i in range(11, 1, -1):  # doesn't include i 
+      print i
+\end{minted}
+ \end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Loops}
+ \textbf{Looping through lists} 
+\begin{minted}{python3}
+        for item in list:
+            print(item)
+\end{minted}
+ \vspace{4em}
+ \pause
+\textbf{But, what if you have multiple dimensional array ??\\ }
+ \pause
+ \vspace{2em}
+\textcolor{gray}{\textbf{That's when you need nested loops !}}
+ \end{frame}
 
 
-% \section{Section no.3} 
-% \subsection{Tables}
-% \frame{\frametitle{Tables}
-% \begin{tabular}{|c|c|c|}
-% \hline
-% \textbf{Date} & \textbf{Instructor} & \textbf{Title} \\
-% \hline
-% WS 04/05 & Sascha Frank & First steps with  \LaTeX  \\
-% \hline
-% SS 05 & Sascha Frank & \LaTeX \ Course serial \\
-% \hline
-% \end{tabular}}
+\begin{frame}[fragile]
+  \frametitle{Nesting Loops}
+ \textbf{Nesting means using loops inside of loops : } 
+ \vspace{2em}
+\begin{minted}{python3}
+  list_of_lists = [ [1,2,3], [4,5,6], [7,8,9] ] 
+  for list in list_of_lists:
+      for item in list:
+          print(item)
+
+  # above prints 1 through 9 when done
+
+\end{minted}
+ \end{frame}
+ 
+ \begin{frame}
+   \frametitle{While loop}
+   \textbf{When you want to do something \\ 
+     \textit{untill} a certain condition is
+  \textit{true} use \textit{while} loops}
+  \vspace{2em}
+   \begin{itemize}
+   \item Use while loop when you dont have a tidy data structure to iterate through
+   \item or don't have a relevant generator function.
+   \item when you want to decide when to stop from within the loop \pause
+   \item  Let's see what I mean!
+   \end{itemize}
+  \vspace{4em}
+ \end{frame}
 
 
-% \frame{\frametitle{Tables with pause}
-% \begin{tabular}{c c c}
-% A & B & C \\ 
-% \pause 
-% 1 & 2 & 3 \\  
-% \pause 
-% A & B & C \\ 
-% \end{tabular} }
+ \begin{frame}[fragile]
+   \frametitle{While loop}
+   \textbf{ How many perfect cube numbers are less than 100000?}
+   \vspace{2em} \pause
+\begin{minted}{python3}
+   this_many = 0      # this counts the number of cube numbers found 
+   cuberoot = 1
+   while cuberoot**3 < 100000:
+       this_many += 1
+       cuberoot += 1
+
+   print(this_many)   # executes when the loop completes.
+\end{minted}
+ \end{frame}
+
+ \subsection{Functions}
+ \begin{frame}[fragile]
+   \frametitle{Functions}
+\textbf{About functions:}
+   \begin{itemize}
+   \item Functions are similar to what we understand from maths.
+   \pause
+   \item Functions take some input(s) and return some ouput(s)
+   \pause
+   \item input and output could be different type of data
+   \end{itemize}
+   \pause
+\textbf{Why use functions?}
+   \pause
+\begin{itemize}
+   \item Functions allow us to divide the problem into logical chunks of
+     sub-problems that we can separately deal with.
+   \pause
+   \item makes code more readable and more structured!
+   \pause
+   \item makes debugging easy !
+\end{itemize}
+\end{frame}
 
 
-% \section{Section no. 4}
-% \subsection{blocs}
-% \frame{\frametitle{blocs}
+ \begin{frame}[fragile,fragile]
+   \frametitle{Functions}
+\textbf{Let's see an example}
+\vspace{2em}
+\begin{minted}{python3}
+    def toPercent(num, denum):
+        ''' Takes a fraction and returns 
+        equivalent percentage '''
+        percent = num/denum  * 100
+        percent = int(percent)  
+        return percent      # return is used to output
 
-% \begin{block}{title of the bloc}
-% bloc text
-% \end{block}
+    print("4/5 = ", toPercent(4,5), "%.")
 
-% \begin{exampleblock}{title of the bloc}
-% bloc text
-% \end{exampleblock}
+\end{minted}
+ \end{frame}
 
 
-% \begin{alertblock}{title of the bloc}
-% bloc text
-% \end{alertblock}
-% }
+ \begin{frame}[fragile]
+   \frametitle{Namescope}
+   \begin{itemize}
+   \item Namescope is like a dictionary that maps variable \\
+     names to their values 
+   \item Every function has its own namespace.
+   \item which means variable declared in one function \\
+     can't be accessed from another.
+   \end{itemize}
+ \end{frame}
 
-% \section{Section no. 5}
-% \subsection{split screen}
+\section{Object Oriented Programming with Python}
+\vspace{2em}
+ \begin{frame}[fragile]
+   \frametitle{Overview OOP}
+   \begin{figure}
+     \centering
+   \includegraphics[width=0.5\textwidth]{minimilitia}  
+     \caption{OOP in Games}
+   \end{figure}
+ \end{frame}
 
-% \frame{\frametitle{splitting screen}
-% \begin{columns}
-% \begin{column}{5cm}
-% \begin{itemize}
-% \item Beamer 
-% \item Beamer Class 
-% \item Beamer Class Latex 
-% \end{itemize}
-% \end{column}
-% \begin{column}{5cm}
-% \begin{tabular}{|c|c|}
-% \hline
-% \textbf{Instructor} & \textbf{Title} \\
-% \hline
-% Sascha Frank &  \LaTeX \ Course 1 \\
-% \hline
-% Sascha Frank &  Course serial  \\
-% \hline
-% \end{tabular}
-% \end{column}
-% \end{columns}
-% }
 
-% \subsection{Pictures} 
-% \frame{\frametitle{pictures in latex beamer class}
-% \begin{figure}
-% \includegraphics[scale=0.5]{PIC1} 
-% \caption{show an example picture}
-% \end{figure}}
+ \begin{frame}[fragile]
+   \frametitle{Objects heirarchy}
+  \begin{figure}
+     \centering
+     \includegraphics[width=0.25\textwidth]{objects}  
+     \caption{Objects and inheritence}
+   \end{figure}
 
-% \subsection{joining picture and lists} 
+ \end{frame}
 
-% \frame{
-% \frametitle{pictures and lists in beamer class}
-% \begin{columns}
-% \begin{column}{5cm}
-% \begin{itemize}
-% \item<1-> subject 1
-% \item<3-> subject 2
-% \item<5-> subject 3
-% \end{itemize}
-% \vspace{3cm} 
-% \end{column}
-% \begin{column}{5cm}
-% \begin{overprint}
-% \includegraphics<2>{PIC1}
-% \includegraphics<4>{PIC2}
-% \includegraphics<6>{PIC3}
-% \end{overprint}
-% \end{column}
-% \end{columns}}
 
-\end{document}
+ \begin{frame}[fragile]
+   \frametitle{Objects heirarchy}
+  \textbf{Attributes and methods} \\ 
+  Variables \textit{encapculated} inside a class are its attributes. And functions
+  \textit{encapculated} within a class are called its methods.
+  \linebreak
+  \linebreak
+  \textbf{Parent Class} \\ 
+  The class above a class in class heirarchy is called its parent.
+  \linebreak
+  \linebreak
+  \textbf{Child class} \\ 
+  The classes that derive from a class are its children.
+  \linebreak
+  \linebreak
+  \textbf{Inheritence} \\
+\small{  Child class retains all the methods and attributes from the parents. This is}
+  known as inheritence.
+ \end{frame}
+
+
+ \begin{frame}[fragile]
+   \frametitle{To be continued...}
+   \begin{figure}
+     \vspace{-2em}
+   \includegraphics[width=0.20\textwidth]{numpy}   
+   \includegraphics[width=0.08\textwidth]{scipy}  \\ 
+   \includegraphics[width=0.24\textwidth]{matplot} 
+   \end{figure}
+
+
+   \hspace{12em}\centering\colorbox{gray}{\textbf{ \linebreak\huge{Thank You!}\linebreak}}
+ \end{frame}
+
+ \end{document}
